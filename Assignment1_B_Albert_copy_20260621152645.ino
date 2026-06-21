@@ -6,10 +6,10 @@ void flashLED(int rates) {
   int flashCount = 0;
 
   while (flashCount < rates) {
-    digitalWrite(ledPin, 1);
+    digitalWrite(ledPin, 1); // 1 or HIGH to on LED
     delay(1000);
 
-    digitalWrite(ledPin, 0);
+    digitalWrite(ledPin, 0);  //  0 or LOW to on LED
     delay(1000);
 
     flashCount = flashCount + 1;
